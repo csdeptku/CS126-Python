@@ -1,9 +1,8 @@
 #This program computes the body mass index of a person, given the person's height and weight. 
 
-m = input('Enter your mass in kilograms: ')
-h = input('Enter your height in meters: ') 
+height = float(input("Enter your height: "))
+weight = float(input("Enter your weight: "))
 
-m = float(m)
-h = float(h)
-
-print(m/h**2)
+bmi = weight/((height*.01)**2)
+bmi = round(bmi, 2)
+print("BMI: ", bmi)
