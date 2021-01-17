@@ -17,4 +17,4 @@ while i < max_guesses:
   else:
      print('Try harder 🧐') 
   i+=1 
-print('You did it in {} attempts.'.format(i)) 
+print('You had {} attempts and the number was {}.'.format(i,x)) 
