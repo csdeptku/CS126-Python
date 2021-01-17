@@ -12,6 +12,7 @@ while i < max_guesses:
      break 
   elif abs(guess - x) <= 2: 
      print("You're very close 😅")
+     i-=1
   elif abs(guess - x) >= 8: 
      print("You're very far away 🙃")
   else:
