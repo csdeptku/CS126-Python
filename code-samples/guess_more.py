@@ -9,6 +9,7 @@ max_guesses = 5
 while i < max_guesses: 
   guess = int(input('Guess the value of x: '))
   i+=1
+  j+=1 
   if guess == x: 
      print('You made it 😄')
      break 
@@ -19,6 +20,4 @@ while i < max_guesses:
      print("{}: You're very far away 🙃".format(i))
   else:
      print('{}: Try harder 🧐'.format(i)) 
-   
-  j+=1 
 print('You had {} attempts and the number was {}.'.format(j,x)) 
