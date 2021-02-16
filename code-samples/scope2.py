@@ -1,19 +1,17 @@
-x=10
-y=20
+x = 10
 
-def f(x=5):
-   x+=5
-   return x+6
+def f(x):
+   x = 2
 
 def g():
-   x=5
-   x+=10
-   return x
+   print(x)
 
-def sum(L):
-   s = 0
-   for x in L:
-      s+=i
-   return s
+def h():
+   global x
+   x = 2
 
-print(x,f(),g(),x,sum([1,2,3]))
+g()
+f(x)
+print(x)
+h()
+print(x)
