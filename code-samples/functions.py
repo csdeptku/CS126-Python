@@ -41,6 +41,15 @@ def index(L,e):
       i+=1
    return i+1 
 
+def find_all(L,e):
+    M = []
+    i = 0
+    for x in L:
+        if x == e:
+            M.append(i)
+        i+=1
+    return M
+
 L=input().split()
 L=list(map(eval,L))
 
@@ -56,4 +65,5 @@ if n>=3:
 print('Squared:')
 print(list(map(square,L)))
 print('Index of',1,'is',index(L,1))
+print('All indexes of',1,'is',find_all(L,1))
 
