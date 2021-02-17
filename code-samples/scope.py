@@ -14,7 +14,7 @@ def g(x):
     def f(x):
         x = 5
         return x
-    return x
+    return x,f(x)
 def h():
     global x
     global z
