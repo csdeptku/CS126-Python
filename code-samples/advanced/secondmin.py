@@ -1,5 +1,5 @@
 from math import inf
-def secondmax(L):
+def secondmin(L):
    m1,m2=inf,inf
    for x in L:
       tmp = None
